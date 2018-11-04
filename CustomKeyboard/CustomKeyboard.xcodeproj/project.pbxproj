@@ -14,7 +14,14 @@
 		C7482C06218AC67A00657F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7482C04218AC67A00657F8E /* LaunchScreen.storyboard */; };
 		C7482C14218AC6C600657F8E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7482C13218AC6C600657F8E /* KeyboardViewController.swift */; };
 		C7482C18218AC6C600657F8E /* Giffy Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C7482C11218AC6C600657F8E /* Giffy Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C76F18AD218EF5290063E4B6 /* GifCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76F18AB218EF5290063E4B6 /* GifCollectionViewCell.swift */; };
+		C76F18AE218EF5290063E4B6 /* GifCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C76F18AC218EF5290063E4B6 /* GifCollectionViewCell.xib */; };
+		C79ABA1D218F1BDD0012086E /* SwiftGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79ABA1C218F1BDD0012086E /* SwiftGif.swift */; };
+		C79ABA1E218F1BDD0012086E /* SwiftGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79ABA1C218F1BDD0012086E /* SwiftGif.swift */; };
+		C79ABA20218F51180012086E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79ABA1F218F51180012086E /* DataModel.swift */; };
+		C79ABA21218F51180012086E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79ABA1F218F51180012086E /* DataModel.swift */; };
 		C7D0E4D1218ACA7000708C2C /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7D0E4D0218ACA7000708C2C /* KeyboardView.xib */; };
+		C7D50956218F055F0053379E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7482C02218AC67A00657F8E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,10 @@
 		C7482C11218AC6C600657F8E /* Giffy Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Giffy Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7482C13218AC6C600657F8E /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		C7482C15218AC6C600657F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C76F18AB218EF5290063E4B6 /* GifCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCollectionViewCell.swift; sourceTree = "<group>"; };
+		C76F18AC218EF5290063E4B6 /* GifCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GifCollectionViewCell.xib; sourceTree = "<group>"; };
+		C79ABA1C218F1BDD0012086E /* SwiftGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGif.swift; sourceTree = "<group>"; };
+		C79ABA1F218F51180012086E /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		C7D0E4D0218ACA7000708C2C /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,8 +119,12 @@
 			isa = PBXGroup;
 			children = (
 				C7482C13218AC6C600657F8E /* KeyboardViewController.swift */,
-				C7482C15218AC6C600657F8E /* Info.plist */,
+				C79ABA1F218F51180012086E /* DataModel.swift */,
 				C7D0E4D0218ACA7000708C2C /* KeyboardView.xib */,
+				C76F18AB218EF5290063E4B6 /* GifCollectionViewCell.swift */,
+				C76F18AC218EF5290063E4B6 /* GifCollectionViewCell.xib */,
+				C79ABA1C218F1BDD0012086E /* SwiftGif.swift */,
+				C7482C15218AC6C600657F8E /* Info.plist */,
 			);
 			path = "Giffy Keyboard";
 			sourceTree = "<group>";
@@ -168,6 +183,11 @@
 					};
 					C7482C10218AC6C600657F8E = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -205,7 +225,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D50956218F055F0053379E /* Assets.xcassets in Resources */,
 				C7D0E4D1218ACA7000708C2C /* KeyboardView.xib in Resources */,
+				C76F18AE218EF5290063E4B6 /* GifCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +238,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79ABA1D218F1BDD0012086E /* SwiftGif.swift in Sources */,
+				C79ABA20218F51180012086E /* DataModel.swift in Sources */,
 				C7482BFE218AC67900657F8E /* ViewController.swift in Sources */,
 				C7482BFC218AC67900657F8E /* AppDelegate.swift in Sources */,
 			);
@@ -225,7 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79ABA1E218F1BDD0012086E /* SwiftGif.swift in Sources */,
+				C79ABA21218F51180012086E /* DataModel.swift in Sources */,
 				C7482C14218AC6C600657F8E /* KeyboardViewController.swift in Sources */,
+				C76F18AD218EF5290063E4B6 /* GifCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

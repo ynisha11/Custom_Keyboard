@@ -11,12 +11,16 @@ import UIKit
 class ViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         textView.text = "Start typing here..."
         textView.textColor = UIColor.lightGray
         textView.delegate = self
+
+        let gifImage = UIImage.gif(url: "https://media3.giphy.com/headers/studiosoriginals/fHmcHCHkISg3.gif")
+        imageView.image = gifImage
     }
 
     func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
@@ -31,20 +35,4 @@ class ViewController: UIViewController, UITextViewDelegate {
         textView.resignFirstResponder()
     }
 
-}
-
-extension UIViewController {
-
-    func hideBlinkingCursor() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
-            target: self,
-            action: #selector(UIViewController.dismissKeyboard))
-
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
 }
